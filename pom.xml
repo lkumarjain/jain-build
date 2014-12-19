@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.jain</groupId>
+	<artifactId>jain-build</artifactId>
+	<version>1.1.7</version>
+	<packaging>pom</packaging>
+	<name>Jain Build</name>
+	<description>A quick build project for all</description>
+
+	<profiles>
+		<profile>
+			<id>build.I18Ndemo</id>
+			<modules>
+				<module>../jain-I18n</module>
+				<module>../jain-assoc</module>
+				<module>../jain-I18n-demo</module>
+			</modules>
+		</profile>
+		<profile>
+			<id>build.I18N</id>
+			<modules>
+				<module>../jain-I18n</module>
+			</modules>
+		</profile>
+		<profile>
+			<id>build.assoc</id>
+			<modules>
+				<module>../jain-I18n-demo</module>
+			</modules>
+		</profile>
+	</profiles>
+</project>
