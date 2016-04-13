@@ -29,5 +29,18 @@
 				<module>../jain-I18n-demo</module>
 			</modules>
 		</profile>
+		<profile>
+			<id>build.jain-faces</id>
+			<modules>
+				<module>../jain-faces</module>
+			</modules>
+		</profile>
+		<profile>
+			<id>build.jainfacesshowcase</id>
+			<modules>
+				<module>../jain-faces</module>
+				<module>../jainfacesshowcase</module>
+			</modules>
+		</profile>
 	</profiles>
 </project>
